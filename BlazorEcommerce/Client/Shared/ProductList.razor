@@ -30,11 +30,11 @@
     //estudar depois como seri se usarmos o metodo OnAfterRenderAsync !!!!
     protected override async Task OnInitializedAsync()
     {
-        var result = await Http.GetFromJsonAsync<List<Product>>("api/product");
+        var result = await Http.GetFromJsonAsync<ServiceResponse<List<Product>>>("api/product");
 
-        if(result != null)
+        if(result != null && result.Data != null) 
         {
-            Products = result;
+            Products = result.Data;
         }
     }
 }

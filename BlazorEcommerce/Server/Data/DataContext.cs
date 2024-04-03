@@ -6,7 +6,7 @@
         {
             
         }
-
+        //PQ TEM QUE SER PROTECTED OVERRIDE AQUI?????
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Product>().HasData(
