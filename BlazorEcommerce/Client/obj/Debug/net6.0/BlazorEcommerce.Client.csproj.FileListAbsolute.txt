@@ -819,6 +819,7 @@ C:\Users\lucas\Projects_Visual_Studio\BlazorEcommerce\BlazorEcommerce\Client\obj
 C:\Users\lucas\Projects_Visual_Studio\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\lucas\Projects_Visual_Studio\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\MainLayout.razor.rz.scp.css
 C:\Users\lucas\Projects_Visual_Studio\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\NavMenu.razor.rz.scp.css
+C:\Users\lucas\Projects_Visual_Studio\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ProductDetails.razor.rz.scp.css
 C:\Users\lucas\Projects_Visual_Studio\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\Shared\ProductList.razor.rz.scp.css
 C:\Users\lucas\Projects_Visual_Studio\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\bundle\BlazorEcommerce.Client.styles.css
 C:\Users\lucas\Projects_Visual_Studio\BlazorEcommerce\BlazorEcommerce\Client\obj\Debug\net6.0\scopedcss\projectbundle\BlazorEcommerce.Client.bundle.scp.css
