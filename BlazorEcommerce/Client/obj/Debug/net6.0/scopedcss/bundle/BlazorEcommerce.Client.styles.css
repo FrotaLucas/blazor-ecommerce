@@ -158,6 +158,10 @@ main[b-7v9fucczvh] {
 }
 
 @media (max-width: 1023.98px) {
+    .media[b-2rnol1yh7h] {
+        flex-direction: column;
+    }
+
     .media-img[b-2rnol1yh7h] {
         max-width: 300px;
     }
@@ -178,15 +182,6 @@ main[b-7v9fucczvh] {
 
 .media-img:hover[b-fx5atut3jr] {
     transform: scale(1.5);
-}
-
-.media[b-fx5atut3jr]{
-    display: flex;
-    align-items: flex-start;
-}
-
-.media-body[b-fx5atut3jr]{
-    flex: 1;
 }
 
 .media-img-wrapper[b-fx5atut3jr] {
