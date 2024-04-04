@@ -39,7 +39,7 @@ else
     //estudar depois como seri se usarmos o metodo OnAfterRenderAsync !!!!
     protected override async Task OnInitializedAsync()
     {
-        await ProductService.GetProduct();
+        await ProductService.GetProducts();
 
         //PQ ISSO AQUI NAO ESTA CERTO? PQ o campo Products nao esta mais sendo preenchido ??
         // var result = await productService.GetProduct();

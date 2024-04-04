@@ -7,6 +7,7 @@
         List<Product> Products {get; set;}
 
         //pq essse Task nao tem List ou ServiceResponse com encapsulamento ??????????
-        Task GetProduct();
+        Task GetProducts();
+        Task<ServiceResponse<Product>> GetProduct(int productId);
     }
 }
