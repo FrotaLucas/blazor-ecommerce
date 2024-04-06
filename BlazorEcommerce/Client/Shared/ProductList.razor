@@ -1,5 +1,6 @@
 ﻿@* @inject HttpClient Http; *@
 @inject IProductService ProductService;  //Pq PascalCase ? Variavel deveria se usar CamelCase!!!!!!!!!!
+@implements IDisposable;
 
 @if (ProductService.Products == null || ProductService.Products.Count == 0)
 {
@@ -32,11 +33,13 @@ else
 }
 
 @code {
+    //1 Solucao
     //pQ Products precisa ser static ???????
     //private static List<Product> Products = new List<Product>();
 
     //pQ protected e override aqui ?????
     //estudar depois como seri se usarmos o metodo OnAfterRenderAsync !!!!
+
     protected override async Task OnInitializedAsync()
     {
         await ProductService.GetProducts();
@@ -48,5 +51,18 @@ else
         // {
         //     Products = result.Data;
         // }
+    }
+
+
+    //2 Solucao
+    protected override void OnInitialized()
+    {
+        ProductService.ProductsChanged += StateHasChanged;
+    }
+
+    //pq tem que ser publico ?
+    public void Dispose()
+    {
+        ProductService.ProductsChanged -= StateHasChanged;
     }
 }
