@@ -38,5 +38,24 @@ namespace BlazorEcommerce.Server.Services
 
                 return response;
         }
+
+        public async Task<ServiceResponse<List<Product>>> GetProductsByCategory(string category)
+        {
+            var response = new ServiceResponse<List<Product>>();
+
+            var products = await _context.Products.Where(p=> p.Category.Url.ToLower().Equals(category.ToLower())).ToListAsync();
+
+            Console.WriteLine($"List of products: {products.Count}");
+            if(products == null || products.Count == 0) 
+            {
+                response.Success = false;
+                response.Message = "List of products not found";
+                return response; 
+            }
+            response.Data = products;
+            return response;
+        }
+
+
     }
 }

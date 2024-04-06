@@ -7,7 +7,9 @@
         List<Product> Products {get; set;}
 
         //pq essse Task nao tem List ou ServiceResponse com encapsulamento ??????????
-        Task GetProducts();
+        Task GetProducts(string? categoryUrl = null);
         Task<ServiceResponse<Product>> GetProduct(int productId);
+
+        event Action ProductsChanged;
     }
 }
