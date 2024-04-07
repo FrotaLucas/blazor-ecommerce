@@ -9,7 +9,8 @@
         //pq essse Task nao tem List ou ServiceResponse com encapsulamento ??????????
         Task GetProducts(string? categoryUrl = null);
         Task<ServiceResponse<Product>> GetProduct(int productId);
-
+        //evento criado para ajudar a perceber mudanca quando categoria mudar. Depois do componente NavMenu inicializado
+        //ele nao recarrega novamente
         event Action ProductsChanged;
     }
 }
