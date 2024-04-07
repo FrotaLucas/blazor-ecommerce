@@ -27,5 +27,11 @@
             //chamada de evento quando metodo GetProducts for acionado
             ProductsChanged.Invoke();
         }
+        public DateTime MyDate { get; set; }
+        public async Task UpdateDate()
+        {
+            MyDate = DateTime.Now;
+            //ProductsChanged.Invoke();
+        }
     }
 }
